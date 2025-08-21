@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damien Babatoundé JOB - Développeur d'élite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation">
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="loading-text">Chargement...</div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Floating Orbs -->
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+    
+    <!-- Particle System -->
+    <div class="particle-system" id="particleSystem"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Damien JOB</div>
+            <div id="burgerMenu" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#education">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Damien Babatoundé <br> JOB</h1>
+                <h2 class="hero-subtitle">DÉVELOPPEUR D'ÉLITE & INNOVATEUR</h2>
+                <p class="hero-description">
+                    Architecte digital passionné, je conçois et développe des solutions technologiques
+                    avant-gardistes qui transforment les idées en réalités numériques exceptionnelles.
+                    Diplômé en Système Informatique et Logiciel, je combine expertise technique et vision innovante.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-visual">
+                    <div class="code-lines">
+                        <div class="code-line">const developpeur = {</div>
+                        <div class="code-line">  nom: "Damien JOB",</div>
+                        <div class="code-line">  passion: "Innovation",</div>
+                        <div class="code-line">  mission: "Transformer les idées en réalité"</div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">À PROPOS</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>🚀 Visionnaire Technologique</h3>
+                    <p>
+                        Je suis un développeur béninois de nouvelle génération 
+                        diplômé d'une Licence Professionnelle en Système Informatique et Logiciel d. Je combine expertise technique et vision innovante pour créer des solutions 
+                        digitales révolutionnaires.
+                    </p>
+                    <p>
+                        Ma passion pour l'innovation me pousse à explorer constamment les dernières
+                        technologies et à repousser les limites du possible dans le développement
+                        web et mobile. Je suis célibataire et entièrement dévoué à ma mission de transformer 
+                        les idées en réalité numérique.
+                    </p>
+                    
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">4+</span>
+                        <span>Années d'Expérience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span>Projets Réalisés</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span>Innovation</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">∞</span>
+                        <span>Ambition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">ARSENAL TECHNOLOGIQUE</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-title">Développement Web</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">HTML5 & CSS3</li>
+                        <li class="skill-item">Bootstrap & Tailwind</li>
+                        <li class="skill-item">PHP & WordPress</li>
+                        <li class="skill-item">Framework Vue.js et React.js</li>
+                        <li class="skill-item">Intégration Firebase</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-title">Développement Mobile</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Flutter </li>
+                        <li class="skill-item">Applications multiplateformes</li>
+                        <li class="skill-item">Systèmes de paiement</li>
+                        <li class="skill-item">Intégration Firebase</li>
+                        <li class="skill-item">Développement d'API</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-title">Backend & Base de données</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">PostgreSQL</li>
+                        <li class="skill-item">MySQL</li>
+                        <li class="skill-item">Framework Django</li>
+                        <li class="skill-item">Laravel & Symfony</li>
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">Conception de bases de données</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-title">Design & Créativité</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">UI/UX Design</li>
+                        <li class="skill-item">Canva</li>
+                        <li class="skill-item">Conception de logos</li>
+                        <li class="skill-item">Identité de marque</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">⚙️</div>
+                        <div class="skill-title">DevOps & Outils</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">GitHub </li>
+                        <li class="skill-item">Modélisation UML</li>
+                        <li class="skill-item">Méthodologie Agile</li>
+                        <li class="skill-item">Microsoft Office Suite</li>
+                        <li class="skill-item">Gestion de projet</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🧠</div>
+                        <div class="skill-title">Compétences comportementales</div>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Leadership et mentorat</li>
+                        <li class="skill-item">Collaboration en équipe</li>
+                        <li class="skill-item">Résolution de problèmes</li>
+                        <li class="skill-item">Adaptabilité</li>
+                        <li class="skill-item">Communication</li>
+                        <li class="skill-item">Esprit d'innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">PROJETS ÉLITES</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏦</div>
+                        <div>
+                            <div class="project-title">Plateforme Assurance Pro</div>
+                            <div class="project-company">ITSM-Bénin</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Application web complète permettant la gestion des dépôts d'assurance avec
+                        renouvellement automatique et dashboard de gestion clientèle avancé.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">API REST</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">💳</div>
+                        <div>
+                            <div class="project-title">Application de paiement mobile</div>
+                            <div class="project-company">ITSM-Bénin</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Application mobile Flutter permettant la consultation des dépôts d'assurance
+                        et intégrant un système de paiement sécurisé et intuitif.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">API de paiement</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">Laravel</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">⛪</div>
+                        <div>
+                            <div class="project-title">Système de gestion des rdv dans une église</div>
+                            <div class="project-company">ITSM-Bénin</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Solution mobile complète pour la gestion d'agenda pastoral, suivi des
+                        rendez-vous et analyse financière en temps réel.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Tableau de bord</span>
+                        <span class="tech-tag">Analytique</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">Laravel</span>
+                    </div>
+                </div>
+               
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚗</div>
+                        <div>
+                            <div class="project-title">Application mobile de transport</div>
+                            <div class="project-company">SmartApps</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Application de transport moderne avec géolocalisation en temps réel,
+                        réservation instantanée et système de paiement intégré.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Google Maps</span>
+                        <span class="tech-tag">Temps réel</span>
+                        <span class="tech-tag">Géolocalisation</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📞</div>
+                        <div>
+                            <div class="project-title">Plateforme de mise à jour des contacts</div>
+                            <div class="project-company">SmartApps</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Plateforme intelligente de mise à jour automatique des contacts avec
+                        ajout de l'indice 01 pour la nouvelle numérotation béninoise.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Automatisation</span>
+                        <span class="tech-tag">Traitement par lots</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📝</div>
+                        <div>
+                            <div class="project-title">Plateforme de création de CV</div>
+                            <div class="project-company">Kapital Humain et Conseil</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Plateforme révolutionnaire de création de CV avec glisser-déposer avancé,
+                        personnalisation complète et modèles professionnels.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Glisser-déposer</span>
+                        <span class="tech-tag">Export PDF</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎥</div>
+                        <div>
+                            <div class="project-title">Plateforme de visioconférence</div>
+                            <div class="project-company">Kapital Humain et Conseil</div>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Plateforme de visioconférence haute performance avec fonctionnalités
+                        avancées de collaboration et streaming HD.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">Temps réel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">PARCOURS PROFESSIONNEL</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">FÉV 2025 - PRÉSENT</div>
+                        <div class="timeline-title">Développeur principal & Designer</div>
+                        <div class="timeline-company">ITSM-Bénin - Cotonou</div>
+                        <ul>
+                            <li>Architecture et développement d'applications web complexes</li>
+                            <li>Création d'écosystèmes mobiles avec systèmes de paiement</li>
+                            <li>Solutions de gestion pour secteur religieux</li>
+                            <li>Direction artistique et création de brand identity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">DÉC 2024 - MARS 2025</div>
+                        <div class="timeline-title">Développeur senior</div>
+                        <div class="timeline-company">SmartApps - Cotonou</div>
+                        <ul>
+                            <li>Développement de solutions d'automatisation intelligente</li>
+                            <li>Création d'applications de transport nouvelle génération</li>
+                            <li>Innovation dans les systèmes de communication</li>
+                            <li>Leadership créatif et stratégique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">OCT 2023 - OCT 2024</div>
+                        <div class="timeline-title">Architecte Frontend et Backend</div>
+                        <div class="timeline-company">Kapital Humain & Conseil</div>
+                        <ul>
+                            <li>Architecture frontend avec React.js et backend avec Django</li>
+                            <li>Implémentation de fonctionnalités drag & drop avancées</li>
+                            <li>Mentoring et formation d'équipes de développeurs</li>
+                            <li>Développement de plateformes de communication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">MARS 2023 - SEP 2023</div>
+                        <div class="timeline-title">Stagiaire professionnel - Développeur web</div>
+                        <div class="timeline-company">Kapital Humain & Conseil</div>
+                        <ul>
+                            <li>Développement full-stack avec technologies modernes</li>
+                            <li>Intégration d'interfaces utilisateur interactives</li>
+                            <li>Maîtrise de Vue.js pour applications complexes</li>
+                            <li>Optimisation des performances et UX</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">FÉV 2022 - JUIL 2022</div>
+                        <div class="timeline-title">Développeur web et mobile (Stage)</div>
+                        <div class="timeline-company">TPapy Consulting Educational Center - Porto-Novo</div>
+                        <ul>
+                            <li>Création de sites internet et applications web</li>
+                            <li>Conception et réalisation d'applications mobiles</li>
+                            <li>Mise à niveau sur les frameworks (Laravel, Symfony)</li>
+                            <li>Modélisation UML des solutions informatiques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">DEPUIS JAN 2022</div>
+                        <div class="timeline-title">Développeur web et mobile (Bénévole)</div>
+                        <div class="timeline-company">Collectif "Agir Pour les Réfugiés" - Cotonou</div>
+                        <ul>
+                            <li>Création et gestion de site web</li>
+                            <li>Communication digitale</li>
+                            <li>Support technique et maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">DEPUIS 2023</div>
+                        <div class="timeline-title">Freelance d'élite</div>
+                        <div class="timeline-company">Entrepreneur Digital</div>
+                        <ul>
+                            <li>Consultation stratégique en transformation digitale</li>
+                            <li>Développement de solutions sur mesure</li>
+                            <li>Innovation et R&D technologique</li>
+                            <li>Croissance continue et excellence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">FORMATION ACADÉMIQUE</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3>Licence Professionnelle en Système Informatique et Logiciel</h3>
+                        <p class="education-period">Octobre 2019 - Juillet 2022</p>
+                        <p class="education-institution">Université LES COURS SONOU - Porto-Novo, Bénin</p>
+                        <p class="education-description">
+                            Formation complète en développement logiciel, architecture système, 
+                            gestion de projet et technologies émergentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🐍</div>
+                    <div class="education-content">
+                        <h3>Formation sur les bases du langage Python</h3>
+                        <p class="education-period">Novembre 2021 - Décembre 2021</p>
+                        <p class="education-institution">CAEB - Porto-Novo, Bénin</p>
+                        <p class="education-description">
+                            Formation spécialisée en programmation Python, structures de données 
+                            et développement d'applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <h3>Baccalauréat Série D</h3>
+                        <p class="education-period">Septembre 2018 - Juillet 2019</p>
+                        <p class="education-institution">CEG Kraké Plage Seme-Podji - Bénin</p>
+                        <p class="education-description">
+                            Baccalauréat série scientifique avec spécialisation en sciences 
+                            exactes et technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="glass-section reveal">
+        <div class="container">
+            <h2 class="section-title">CONNECTONS-NOUS</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <!-- <h3>Prêt à collaborer ?</h3> -->
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>jobdamien6@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+229 01 62 05 68 25</p>
+                            <p>+229 22 96 20 56 825</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Avotrou Lot 512<br>maison KPAKO HOUNSA JAMES<br>Cotonou, Bénin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="contact-form">
+                    <h3>Démarrons un projet ensemble</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Sujet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Lancer le projet
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(99, 102, 241, 0.3); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <div style="font-family: 'Orbitron', monospace; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                DAMIEN BABATOUNDÉ JOB
+            </div>
+            <p style="margin-bottom: 1rem; opacity: 0.9;">Développeur d'élite • Innovateur digital • Visionnaire tech</p>
+            <p style="opacity: 0.7; font-size: 0.9rem;">
+                &copy; 2025 Damien Babatoundé JOB. Conçu avec passion et innovation.
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 0.9rem;">
+                <span style="color: var(--accent);"><i class="fas fa-plane"></i> Voyages</span>
+                <span style="color: var(--primary);"><i class="fas fa-futbol"></i> Football</span>
+                <span style="color: var(--secondary);"><i class="fas fa-gamepad"></i> Jeux vidéo</span>
+                <span style="color: var(--accent);"><i class="fas fa-music"></i> Musique</span>
+                <span style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Innovation</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
