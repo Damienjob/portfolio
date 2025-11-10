@@ -985,6 +985,60 @@ nav.scrolled {
     align-items: center;
 }
 
+/* CV Download Button */
+.cv-download {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn-cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(45deg, #10b981, #059669);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.btn-cv-download::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.btn-cv-download:hover::before {
+    left: 100%;
+}
+
+.btn-cv-download:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.6);
+    background: linear-gradient(45deg, #059669, #047857);
+}
+
+.btn-cv-download i {
+    font-size: 1.2rem;
+    animation: downloadPulse 2s infinite;
+}
+
+@keyframes downloadPulse {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
 .contact-info {
     animation: slideInLeft 1s ease;
 }
@@ -1675,5 +1729,17 @@ nav.scrolled {
     }
     .skill-title {
         font-size: 1rem;
+    }
+    
+    /* CV Download Button responsive */
+    .btn-cv-download {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cv-download {
+        margin-top: 1.5rem;
     }
 }
