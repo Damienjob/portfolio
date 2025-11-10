@@ -389,18 +389,35 @@ function createParticleSystem() {
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burgerMenu");
   const navLinks = document.querySelector(".nav-links");
+  const navOverlay = document.getElementById("navOverlay");
 
   if (burger && navLinks) {
     burger.addEventListener("click", function () {
       navLinks.classList.toggle("mobile-active");
       burger.classList.toggle("active");
+      if (navOverlay) {
+        navOverlay.classList.toggle("active");
+      }
     });
+    
     // Ferme le menu mobile au clic sur un lien
     navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", function () {
         navLinks.classList.remove("mobile-active");
         burger.classList.remove("active");
+        if (navOverlay) {
+          navOverlay.classList.remove("active");
+        }
       });
     });
+    
+    // Ferme le menu au clic sur l'overlay
+    if (navOverlay) {
+      navOverlay.addEventListener("click", function () {
+        navLinks.classList.remove("mobile-active");
+        burger.classList.remove("active");
+        navOverlay.classList.remove("active");
+      });
+    }
   }
 });
